@@ -1,18 +1,25 @@
 body {
-    
-    background-color:#3DADD9;
+    background-image: url('images/ecosse.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+a {
+    color: #000000;
+}
+a:hover {
+    text-decoration: underline;
 }
 .grid-container {
     display: grid;
-    width: 600px;
+    width: 700px;
     height: 400px;
-    grid-template-columns: 1fr 2fr 4fr;
-    margin-right: 30%;
-    margin-left:30%;
+    grid-template-columns: 2fr 2fr 4fr;
+    margin-right: auto;
+    margin-left:auto;
     margin-bottom: 10%;
     margin-top: 10%;
-    gap:5px;
-    background-color:#D9D9D9;
+    gap : 5px;
     border-radius: 5px;
   }
 /*
@@ -33,37 +40,113 @@ body {
       ". . . . .";
   }
   */
-  #photo {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
   .grid1 {
       grid-column-start: 1;
       grid-column-end:2;
       padding-left: 10px;
-      padding-right: 10px;
-
+      padding-right: 1px;
+      border-radius: 5px;
+  }
+  .menu {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+.menu2:hover {
+    transform : scale(1.5)
+  }
+  .menu2 {
+      background-image: linear-gradient (to bottom right, white, #D9D9D9);
+      margin-bottom: 10px;
+      margin-right: 1px;
+      padding: 20px;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 3px;
+      box-shadow: 3px 3px 5px #0D0D0D;
+  }
+  .link {
+    text-decoration: none;
   }
   .grid2 {
       grid-column-start: 2;
       grid-column-end:3;
+      padding: 0;
   }
+  #photo {
+    background-size: cover;
+    width: auto;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #0D0D0D;
+  }
+  .maphoto:hover {
+    transform : scale(1.03)
+}
   .grid3 {
     grid-column-start: 3;
     grid-column-end:4;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#D9D9D9;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #0D0D0D;
+    max-height: 400px;
+}
+.mesinfos:hover {
+    transform : scale(1.03)
 }
 .info1 {
     font-family: 'Montserrat', sans-serif;
 }
 #nom {
-    font-size: 20px;
+    font-size: 43px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 5px;
 }
 #job {
     font-size : 14px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin-top: 0px;
 }
 .info2 {
     font-family: 'Roboto', sans-serif;
+}
+.aboutme {
+    font-size : 11px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 0px;
+    line-height: 150%;
+}
+.titleme {
+    font-size : 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.meinline h3, .meinline p {
+    display: inline;
+    line-height: 150%;
+}
+.mailtel {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.icone {
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.link2 {
+    text-decoration: none;
 }
